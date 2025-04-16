@@ -21,7 +21,7 @@ app.listen(port, ()=>{
 // 6 imposto lo strumento per recuperare gli asset statici usando .use e .static nella cartella public
 app.use(express.static ('public'))
 
-// 7 definisco la rotto dell'array contenente lista
+// 7 definisco la root bacheca dell'array contenente lista
 app.get('/bacheca', (req, res)=>{
     const lista = [
         {
