@@ -1,0 +1,24 @@
+{
+  "name": "express-blog-intro",
+  "version": "1.0.0",
+  "description": "Ciao Ragazzi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "watch": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattiaCallegaro/express-blog-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattiaCallegaro/express-blog-intro/issues"
+  },
+  "homepage": "https://github.com/MattiaCallegaro/express-blog-intro#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
