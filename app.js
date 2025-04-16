@@ -8,6 +8,7 @@ const app = express();
 const port = 3000;
 
 // 4 definisco la rotta base e con <res.send> invio la risposta ("Server del mio blog") al server
+//con .send invio il dato così com'è
 app.get('/', (req, res)=>{
     res.send("Server del mio blog")
 })
@@ -21,7 +22,7 @@ app.listen(port, ()=>{
 app.use(express.static ('public'))
 
 // 7 definisco la rotto dell'array contenente lista
-app.get('/lista', (req, res)=>{
+app.get('/bacheca', (req, res)=>{
     const lista = [
         {
             titolo: "Ciambellone",
@@ -54,5 +55,7 @@ app.get('/lista', (req, res)=>{
             tags:["latte","cacao","uvetta","zucchero"]
         }
     ]
+    //ritorna la risposta del client come se fosse un return di funzione
+    // .json fa la stessa cosa di send ma invio un data json(più strutturato)
     res.json(lista)
 })
